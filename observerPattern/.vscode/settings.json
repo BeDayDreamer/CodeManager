@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "typeinfo": "cpp",
-        "type_traits": "cpp",
-        "string.h": "c"
-    }
-}
