@@ -1,9 +1,10 @@
-<map version="freeplane 1.11.5">
+<map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="SADES" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1733824803787" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" zoom="0.91">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false"/>
+<hook NAME="MapStyle" zoom="1.21">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false"/>
+    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -16,6 +17,9 @@
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
+<font SIZE="10"/>
+</stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes">
 <font SIZE="9"/>
 </stylenode>
@@ -77,7 +81,9 @@
 </node>
 <node TEXT="type" ID="ID_1287355036" CREATED="1733825692590" MODIFIED="1733825697687">
 <node TEXT="adapter" ID="ID_588827904" CREATED="1733825699545" MODIFIED="1733825717936">
-<node TEXT="converting the interface of one class into another interface" ID="ID_820169413" CREATED="1733825719544" MODIFIED="1733825756766"/>
+<node TEXT="definition" FOLDED="true" ID="ID_820169413" CREATED="1733825719544" MODIFIED="1733902812394">
+<node TEXT="converting the interface of one class into another interface" ID="ID_799360289" CREATED="1733825719544" MODIFIED="1733825756766"/>
+</node>
 <node TEXT="type" ID="ID_1789005155" CREATED="1733829596224" MODIFIED="1733829599666">
 <node TEXT="object adapter" FOLDED="true" ID="ID_24140983" CREATED="1733829601410" MODIFIED="1733829607266">
 <node TEXT="adapt all class layer structure of adaptee (include subclass)" ID="ID_1515457733" CREATED="1733829619200" MODIFIED="1733829700420"/>
@@ -371,6 +377,166 @@
 <node TEXT="definition" ID="ID_27236049" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="identify common communication patterns btw. objects" ID="ID_1722166609" CREATED="1733824909984" MODIFIED="1733825001080"/>
 </node>
+<node TEXT="type" ID="ID_1280903843" CREATED="1733825692590" MODIFIED="1733825697687">
+<node TEXT="Observer" ID="ID_1676023899" CREATED="1733825699545" MODIFIED="1733902852034">
+<node TEXT="definition" ID="ID_1966730758" CREATED="1733825719544" MODIFIED="1733902812394">
+<node TEXT="Define a one-to-many dependency between objects so&#xa;that when one object changes state, all its dependents&#xa;are notified and updated automatically." ID="ID_1112597349" CREATED="1733825719544" MODIFIED="1733903178602"/>
+</node>
+<node TEXT="example" FOLDED="true" ID="ID_980599300" CREATED="1733829596224" MODIFIED="1733903196758">
+<node TEXT="我写了一个C语言版本" ID="ID_1209212567" CREATED="1733914305725" MODIFIED="1733914315799"/>
+</node>
+<node TEXT="UML" ID="ID_851079726" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="picture" FOLDED="true" ID="ID_401521899" CREATED="1733831891139" MODIFIED="1733831956140">
+<node TEXT="png-241211-114226396-16414993160414476035.png" ID="ID_1039613597" CREATED="1733913751745" MODIFIED="1733913751745">
+<hook URI="SADES_files/png-241211-114226396-16414993160414476035.png" SIZE="0.4415872" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="explain" FOLDED="true" ID="ID_323612871" CREATED="1733914037057" MODIFIED="1733914039202">
+<node TEXT="png-241211-114754645-6037173764358409114.png" ID="ID_1819121086" CREATED="1733914075991" MODIFIED="1733914075991">
+<hook URI="SADES_files/png-241211-114754645-6037173764358409114.png" SIZE="0.41911027" NAME="ExternalObject"/>
+<node TEXT="1. observer可以由client，即在main里添加到subject中" ID="ID_1090823824" CREATED="1733914193708" MODIFIED="1733914251188"/>
+<node TEXT="2. observer可以pull from subject，也可以只能被动接受" ID="ID_818499238" CREATED="1733914200727" MODIFIED="1733914279464"/>
+</node>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_98582803" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT=" Observer lets you define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically." ID="ID_1840543780" CREATED="1733842962386" MODIFIED="1733914351146"/>
+</node>
+</node>
+<node TEXT="Memento" ID="ID_659566844" CREATED="1733840052313" MODIFIED="1733907526213">
+<node TEXT="difinition" FOLDED="true" ID="ID_1321410723" CREATED="1733840949098" MODIFIED="1733840959115">
+<node TEXT="Without violating encapsulation, capture and externalize an object&apos;s internal state so that the object can be returned to this state later." ID="ID_567955097" CREATED="1733840237273" MODIFIED="1733907543021"/>
+</node>
+<node TEXT="example" FOLDED="true" ID="ID_1284048227" CREATED="1733840872946" MODIFIED="1733840895681">
+<node TEXT="png-241211-133342896-4928071841545817513.png" ID="ID_1245846963" CREATED="1733920424347" MODIFIED="1733920424347">
+<hook URI="SADES_files/png-241211-133342896-4928071841545817513.png" SIZE="0.5718643" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241211-133411860-17553721811186493620.png" ID="ID_249015907" CREATED="1733920452756" MODIFIED="1733920452756">
+<hook URI="SADES_files/png-241211-133411860-17553721811186493620.png" SIZE="0.5619174" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241211-133434868-3250578072211943013.png" ID="ID_34364946" CREATED="1733920476022" MODIFIED="1733920476022">
+<hook URI="SADES_files/png-241211-133434868-3250578072211943013.png" SIZE="0.64577657" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241211-133450604-8329792663253111752.png" ID="ID_486199916" CREATED="1733920493375" MODIFIED="1733920493375">
+<hook URI="SADES_files/png-241211-133450604-8329792663253111752.png" SIZE="0.6219512" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241211-133504983-16061969135833160637.png" ID="ID_1421473365" CREATED="1733920506250" MODIFIED="1733920506250">
+<hook URI="SADES_files/png-241211-133504983-16061969135833160637.png" SIZE="0.62058824" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_667528269" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="picture" ID="ID_1349078835" CREATED="1733831891139" MODIFIED="1733831956140">
+<node TEXT="normal memento" ID="ID_1288362019" CREATED="1733907601075" MODIFIED="1733920367534">
+<hook URI="SADES_files/png-241211-095957286-7694484411920677102.png" SIZE="0.39660242" NAME="ExternalObject"/>
+<node TEXT="encapsulated momento" ID="ID_892723094" CREATED="1733920344854" MODIFIED="1733920380262">
+<hook URI="SADES_files/png-241211-133223102-1095744118966284714.png" SIZE="0.35870865" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="png-241211-115329169-13667834073666021838.png" ID="ID_1840703971" CREATED="1733914410478" MODIFIED="1733914410478">
+<hook URI="SADES_files/png-241211-115329169-13667834073666021838.png" SIZE="0.45910057" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_874001529" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="Memento lets you capture the object&apos;s internal state without exposing its internal structure, so that the object can be returned to this state later" ID="ID_1870222568" CREATED="1733842962386" MODIFIED="1733920569767"/>
+</node>
+</node>
+<node TEXT="strategy" ID="ID_1967720911" CREATED="1733841394866" MODIFIED="1733914644098">
+<node TEXT="definition" FOLDED="true" POSITION="bottom_or_right" ID="ID_1959299837" CREATED="1733842833100" MODIFIED="1733842871965">
+<node TEXT="Encapsulate interface details in a base  class, and bury implementation details in derived classes." ID="ID_881635923" CREATED="1733842872986" MODIFIED="1733914835292"/>
+</node>
+<node TEXT="example" FOLDED="true" POSITION="bottom_or_right" ID="ID_1010371093" CREATED="1733841429968" MODIFIED="1733841432858">
+<node TEXT="png-241211-120900957-10671069447143556303.png" ID="ID_371136361" CREATED="1733915342075" MODIFIED="1733915342075">
+<hook URI="SADES_files/png-241211-120900957-10671069447143556303.png" SIZE="0.5116848" NAME="ExternalObject"/>
+<node TEXT="png-241211-120935769-15582907557553602446.png" ID="ID_119645827" CREATED="1733915377168" MODIFIED="1733915377168">
+<hook URI="SADES_files/png-241211-120935769-15582907557553602446.png" SIZE="0.5351438" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="定义为Strategy *strategy原因" FOLDED="true" ID="ID_1990569585" CREATED="1733915554404" MODIFIED="1733915587634">
+<node FOLDED="true" ID="ID_1166576456" CREATED="1733915637619" MODIFIED="1733915637619"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    多态性丢失
+  </body>
+</html>
+</richcontent>
+<node ID="ID_1021898791" CREATED="1733915665773" MODIFIED="1733915665773"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        原来的 <code>Strategy*</code>&#xa0;是指向基类的指针，使用虚函数实现动态多态（运行时决定调用哪个具体类的 <code>execute</code>）。
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_491090448" CREATED="1733915665773" MODIFIED="1733915696327"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        改为直接存储 <code>Strategy</code>&#xa0;对象后，切换到静态多态（编译时绑定），程序会始终调用基类的 <code>execute</code>&#xa0;&#xa0;方法，而不会调用具体派生类的实现。
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_863909068" CREATED="1733915665800" MODIFIED="1733915665800"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      如果 <code>Strategy</code>&#xa0;是抽象基类，直接存储 <code>Strategy</code>&#xa0;对象会导致编译错误，因为无法实例化抽象类。
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="内存占用" FOLDED="true" ID="ID_378810210" CREATED="1733915652479" MODIFIED="1733915654969">
+<node ID="ID_1734037232" CREATED="1733915681408" MODIFIED="1733915681408"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    存储 <code>Strategy</code>&#xa0;对象会导致所有策略的字段和方法都占用内存，即使当前只使用一个策略。
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_535513471" CREATED="1733842358922" MODIFIED="1733842363690">
+<node TEXT="png-241211-115908879-16035830162617795237.png" ID="ID_1539411662" CREATED="1733914750114" MODIFIED="1733914750114">
+<hook URI="SADES_files/png-241211-115908879-16035830162617795237.png" SIZE="0.41213787" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_18783400" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="• Strategy lets you define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it" ID="ID_184338376" CREATED="1733842962386" MODIFIED="1733914933011"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="creational pattern" POSITION="bottom_or_right" ID="ID_54792032" CREATED="1733824865446" MODIFIED="1733824874912">
 <edge COLOR="#00ff00"/>
@@ -380,7 +546,7 @@
 </node>
 <node TEXT="relation btw. objects" POSITION="top_or_left" ID="ID_950635706" CREATED="1733839519768" MODIFIED="1733839529984">
 <edge COLOR="#ff00ff"/>
-<node TEXT="aggregation" FOLDED="true" ID="ID_775257942" CREATED="1733839532210" MODIFIED="1733839537868">
+<node TEXT="aggregation" ID="ID_775257942" CREATED="1733839532210" MODIFIED="1733839537868">
 <node TEXT="example" FOLDED="true" ID="ID_223430628" CREATED="1733839551353" MODIFIED="1733839553748">
 <node TEXT="Engine 的生命周期独立于 Car。&#xa;Engine 可以被多个 Car 对象共享" ID="ID_137201845" CREATED="1733839566638" MODIFIED="1733839583114">
 <hook URI="SADES_files/png-241210-150605414-9946954488314077350.png" SIZE="0.4296636" NAME="ExternalObject"/>

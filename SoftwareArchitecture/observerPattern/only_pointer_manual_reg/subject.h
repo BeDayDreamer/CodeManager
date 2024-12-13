@@ -17,8 +17,8 @@ typedef struct {
 } Subject;
 
 void SubjectInit(Subject* Sub, const char *name);
-void SubjectAttach(void *self, void *newObserver);
-void SubjectDetach(void *self, void *newObserver);
+void SubjectAttach(void *self, Observer newObserver);
+void SubjectDetach(void *self, Observer newObserver);
 void SubjectNotify(void *self);
 void SubjectSetValue(void *self,int newValue);
 

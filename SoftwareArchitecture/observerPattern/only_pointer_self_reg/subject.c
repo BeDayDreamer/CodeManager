@@ -15,23 +15,20 @@ void SubjectInit(Subject* Sub, const char *name)
 
 void SubjectAttach(void *self, Observer newObserver)
 {
-    if(self != NULL)
+    Subject *subject = (Subject *)self;
+    int count=subject->counting;
+    if(count<=sizeof(subject->ObserverList[count])-1)
     {
-        Subject *subject = (Subject *)self;
-        int count=subject->counting;
-        if(count<=sizeof(subject->ObserverList[count])-1)
+        subject->ObserverList[count]=newObserver;
+        count++;
+        printf("count: %d\nattached\n", count);
+        subject->counting=count;
+        for(int i=0;i<count;i++)
         {
-            subject->ObserverList[count]=newObserver;
-            count++;
-            printf("count: %d\nattached\n", count);
-            subject->counting=count;
-            for(int i=0;i<count;i++)
-            {
-                printf("content in %s: %s\n", subject->SensorName, subject->ObserverList[i].AppName);
-            }
-            
+            printf("content in %s: %s\n", subject->SensorName, subject->ObserverList[i].AppName);
         }
-    }    
+        
+    }
 }
 
 void SubjectDetach(void *self, Observer newObserver)
@@ -40,6 +37,18 @@ void SubjectDetach(void *self, Observer newObserver)
     int count=subject->counting;
     if(count>0)
     {
+        for(int i=0; i<count; i++)
+        {
+            //if write newObserver.AppName == subject->ObserverList[i].AppName means you are comparing the value of 2 adrresses, with strcmp!!
+            if(strcmp(newObserver.AppName, subject->ObserverList[i].AppName) == 0 && i != count-1)
+            {
+                while(i<count)
+                {
+                    subject->ObserverList[i]=subject->ObserverList[i+1];
+                    i++;
+                }    
+            }
+        }
         count--;
         printf("count: %d\ndetached\n", count);
         subject->counting=count;
@@ -62,7 +71,7 @@ void SubjectNotify(void *self)
     }
 }
 
-void SubjectSetValue(void *self, int newValue)
+void SubjectSetValue(void *self,int newValue)
 {
     Subject *subject = (Subject *)self;
     subject->value = newValue;
@@ -71,7 +80,7 @@ void SubjectSetValue(void *self, int newValue)
 
 void Air_init(Air *air, const char *name) {
     SubjectInit(&air->base, name);   
-    air->base.setValue=SubjectSetValue;  
+    air->base.setValue=SubjectSetValueAir;  
 }
 
 void SubjectSetValueAir(Subject *air, int newValue)
