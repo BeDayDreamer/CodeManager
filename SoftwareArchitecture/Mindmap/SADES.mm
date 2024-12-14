@@ -1,10 +1,9 @@
-<map version="freeplane 1.12.1">
+<map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="SADES" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1733824803787" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" zoom="1.21">
+<hook NAME="MapStyle" zoom="0.827">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false"/>
-    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -542,6 +541,136 @@
 <edge COLOR="#00ff00"/>
 <node TEXT="definition" ID="ID_704143590" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="deal with object creation mechanisms" ID="ID_1952688676" CREATED="1733824909984" MODIFIED="1733825026499"/>
+</node>
+<node TEXT="type" ID="ID_12624268" CREATED="1733825692590" MODIFIED="1733825697687">
+<node TEXT="Factory Method" ID="ID_1809285581" CREATED="1733825699545" MODIFIED="1734207376378">
+<node TEXT="definition" FOLDED="true" ID="ID_228418788" CREATED="1733825719544" MODIFIED="1733902812394">
+<node TEXT="Define an interface for creating an object, but let subclasses decide which class to instantiate." ID="ID_1877939298" CREATED="1733825719544" MODIFIED="1734207528929"/>
+</node>
+<node TEXT="example" FOLDED="true" ID="ID_359687979" CREATED="1733829596224" MODIFIED="1733903196758">
+<node TEXT="我写了一个C语言版本的abstract factory，是factory method升级版，可进行参考，其中createproduct函数没有写成返回product形式，是以void形式写的，稍作改进即可" ID="ID_1320046145" CREATED="1733914305725" MODIFIED="1734208612246"/>
+</node>
+<node TEXT="UML" FOLDED="true" ID="ID_542583639" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="picture" FOLDED="true" ID="ID_1619267653" CREATED="1733831891139" MODIFIED="1733831956140">
+<node TEXT="png-241214-211926288-11196467274478111622.png" ID="ID_1143625309" CREATED="1734207567689" MODIFIED="1734207567689">
+<hook URI="SADES_files/png-241214-211926288-11196467274478111622.png" SIZE="0.32227767" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="explain" FOLDED="true" ID="ID_1840821312" CREATED="1733914037057" MODIFIED="1733914039202">
+<node TEXT="只解决单一工厂类型生产同一类型不同产品问题" ID="ID_542079454" CREATED="1734207756237" MODIFIED="1734207815273"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_709063320" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="Factory Method defines an interface for creating an object, but lets subclasses decide which class to&#xa;instantiate." ID="ID_589808698" CREATED="1733842962386" MODIFIED="1734208366419"/>
+</node>
+</node>
+<node TEXT="Abstract Factory" ID="ID_1323424392" CREATED="1733840052313" MODIFIED="1734208395887">
+<node TEXT="difinition" FOLDED="true" ID="ID_240954102" CREATED="1733840949098" MODIFIED="1733840959115">
+<node TEXT="Provide an interface for creating families of related or dependent objects without specifying their concrete classes." ID="ID_1552605186" CREATED="1733840237273" MODIFIED="1734208534020"/>
+</node>
+<node TEXT="example" FOLDED="true" ID="ID_326504241" CREATED="1733840872946" MODIFIED="1733840895681">
+<node TEXT="已完成C语言代码" ID="ID_337858527" CREATED="1734208446491" MODIFIED="1734208458838"/>
+</node>
+<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_595347149" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="picture" FOLDED="true" ID="ID_803078021" CREATED="1733831891139" MODIFIED="1733831956140">
+<node TEXT="png-241214-213342748-11235508671857106448.png" ID="ID_502409537" CREATED="1734208424400" MODIFIED="1734208424400">
+<hook URI="SADES_files/png-241214-213342748-11235508671857106448.png" SIZE="0.6528836" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_16460498" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="Abstract Factory provides an interface for creating families of related or dependent objects without specifying their concrete classes." ID="ID_544025586" CREATED="1733842962386" MODIFIED="1734208571682"/>
+</node>
+</node>
+<node TEXT="singleton" ID="ID_498832756" CREATED="1733841394866" MODIFIED="1734209146269">
+<node TEXT="definition" FOLDED="true" POSITION="bottom_or_right" ID="ID_1405927275" CREATED="1733842833100" MODIFIED="1733842871965">
+<node TEXT="Encapsulate interface details in a base  class, and bury implementation details in derived classes." ID="ID_694624833" CREATED="1733842872986" MODIFIED="1733914835292"/>
+</node>
+<node TEXT="example" FOLDED="true" POSITION="bottom_or_right" ID="ID_1784312264" CREATED="1733841429968" MODIFIED="1733841432858">
+<node TEXT="png-241214-215728916-9317110845242675971.png" ID="ID_396639571" CREATED="1734209850123" MODIFIED="1734209850123">
+<hook URI="SADES_files/png-241214-215728916-9317110845242675971.png" SIZE="0.5051643" NAME="ExternalObject"/>
+</node>
+<node TEXT="第一次调用该class形成的instance为甚么第二次调用的时候还保留原因" FOLDED="true" ID="ID_1434018263" CREATED="1734210112172" MODIFIED="1734210128286">
+<node TEXT="png-241214-220223652-16416279422147079665.png" ID="ID_298020634" CREATED="1734210144972" MODIFIED="1734210144972">
+<hook URI="SADES_files/png-241214-220223652-16416279422147079665.png" SIZE="0.5653595" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_47038111" CREATED="1733842358922" MODIFIED="1733842363690">
+<node TEXT="png-241214-220304446-12850573391715563249.png" ID="ID_1589417640" CREATED="1734210185598" MODIFIED="1734210185598">
+<hook URI="SADES_files/png-241214-220304446-12850573391715563249.png" SIZE="0.36089876" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_490853422" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="Singleton to ensure that there is only a single instance of an object created" ID="ID_821744717" CREATED="1733842962386" MODIFIED="1734210224635"/>
+</node>
+</node>
+<node TEXT="prototype" ID="ID_1237961262" CREATED="1733841394866" MODIFIED="1734209213422">
+<node TEXT="definition" FOLDED="true" POSITION="bottom_or_right" ID="ID_1842643847" CREATED="1733842833100" MODIFIED="1733842871965">
+<node TEXT="Prototype is a creational design pattern that lets you produce new objects by copying existing ones without compromising their internals." ID="ID_1446490839" CREATED="1733842872986" MODIFIED="1734210368145"/>
+</node>
+<node TEXT="example" FOLDED="true" POSITION="bottom_or_right" ID="ID_1392004023" CREATED="1733841429968" MODIFIED="1733841432858">
+<node TEXT="png-241214-221924122-11481271383832375950.png" ID="ID_238605480" CREATED="1734211165266" MODIFIED="1734211165266">
+<hook URI="SADES_files/png-241214-221924122-11481271383832375950.png" SIZE="0.5028224" NAME="ExternalObject"/>
+</node>
+<node TEXT="从应用层面理解，我的original是subclass定义指针，但在定义时定义为了unique（prototype），而print函数是subclass的函数，需要显式调用了 static_cast实现类型转化成对应subclass类型；在cast后需要获取裸指针，所以用get进行指针获取在调用其函数。" ID="ID_1516410465" CREATED="1734211828456" MODIFIED="1734212089127"/>
+<node TEXT="field可以是各种复杂数据,在这一步定义" ID="ID_449853537" CREATED="1734212181042" MODIFIED="1734212200865">
+<hook URI="SADES_files/png-241214-223619818-4438087305261210973.png" SIZE="0.58658445" NAME="ExternalObject"/>
+</node>
+<node TEXT="指针区别" ID="ID_1135744712" CREATED="1734212301190" MODIFIED="1734212323012">
+<node TEXT="unique_ptr" FOLDED="true" ID="ID_368108543" CREATED="1734212329327" MODIFIED="1734212346537">
+<node ID="ID_166498806" CREATED="1734212363922" MODIFIED="1734212363922"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    一个 <code>unique_ptr</code>&#xa0;对象只能指向一个资源，且在任何时刻，这个资源只能由一个 <code>unique_ptr</code>&#xa0;来管理。
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="share_ptr" FOLDED="true" ID="ID_1021258240" CREATED="1734212332110" MODIFIED="1734212350966">
+<node ID="ID_553681784" CREATED="1734212376242" MODIFIED="1734212376242"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    多个 <code>shared_ptr</code>&#xa0;可以指向同一个资源。内部通过 <strong>引用计数</strong>&#xa0;记录资源被几个 <code>shared_ptr</code>&#xa0;&#xa0;管理。
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_1071349406" CREATED="1733842358922" MODIFIED="1733842363690">
+<node TEXT="png-241214-220714690-3748132685048209309.png" ID="ID_329970348" CREATED="1734210435907" MODIFIED="1734210435907">
+<hook URI="SADES_files/png-241214-220714690-3748132685048209309.png" SIZE="0.34302297" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_1081941168" CREATED="1733842955531" MODIFIED="1733842961485">
+<node ID="ID_792406047" CREATED="1734210693169" MODIFIED="1734210693169"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Prototype to manage cloning objects.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="relation btw. objects" POSITION="top_or_left" ID="ID_950635706" CREATED="1733839519768" MODIFIED="1733839529984">
