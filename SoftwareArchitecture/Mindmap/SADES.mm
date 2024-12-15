@@ -2,7 +2,7 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="SADES" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1733824803787" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" zoom="0.827">
+<hook NAME="MapStyle" zoom="1.465">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -72,9 +72,45 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="structural pattern" POSITION="bottom_or_right" ID="ID_1189739005" CREATED="1733824813053" MODIFIED="1733824848704">
-<edge COLOR="#ff0000"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="relation btw. objects" POSITION="top_or_left" ID="ID_950635706" CREATED="1733839519768" MODIFIED="1733839529984">
+<edge COLOR="#ff00ff"/>
+<node TEXT="aggregation" ID="ID_775257942" CREATED="1733839532210" MODIFIED="1733839537868">
+<node TEXT="example" FOLDED="true" ID="ID_223430628" CREATED="1733839551353" MODIFIED="1733839553748">
+<node TEXT="Engine 的生命周期独立于 Car。&#xa;Engine 可以被多个 Car 对象共享" ID="ID_137201845" CREATED="1733839566638" MODIFIED="1733839583114">
+<hook URI="SADES_files/png-241210-150605414-9946954488314077350.png" SIZE="0.4296636" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="在c++中，当A对B的调用是将B或B的子类的实例指针进行调用（即在private或protected中出现B的定义），即为aggregation" ID="ID_723355847" CREATED="1733842458075" MODIFIED="1733842693870"/>
+</node>
+<node TEXT="composition" FOLDED="true" ID="ID_1780277191" CREATED="1733839538681" MODIFIED="1733839543858">
+<node TEXT="example" FOLDED="true" ID="ID_1214945367" CREATED="1733839597939" MODIFIED="1733839601299">
+<node TEXT="" ID="ID_1161538299" CREATED="1733839603856" MODIFIED="1733839736593">
+<hook URI="SADES_files/png-241210-150642295-1862562747722265956.png" SIZE="0.48414025" NAME="ExternalObject"/>
+<node ID="ID_125753214" CREATED="1733839738497" MODIFIED="1733839738497"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Engine 的生命周期由 Car 管理
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="当 Car 销毁时，Engine 也随之销毁" ID="ID_1618927350" CREATED="1733839745649" MODIFIED="1733839764825"/>
+<node TEXT="Engine 不能被其他 Car 对象共享" ID="ID_352203823" CREATED="1733839738497" MODIFIED="1733839755860"/>
+</node>
+</node>
+<node TEXT="在c++中，当A对B的调用是将B或B的子类的实例进行调用（即在private或protected中出现B的指针定义），即为composition" ID="ID_1492316369" CREATED="1733842733003" MODIFIED="1733842757687"/>
+</node>
+</node>
+<node TEXT="Design pattern" POSITION="bottom_or_right" ID="ID_1547840828" CREATED="1734253499232" MODIFIED="1734253507223">
+<edge COLOR="#00ffff"/>
+<node TEXT="structural pattern" FOLDED="true" ID="ID_1189739005" CREATED="1733824813053" MODIFIED="1734253511509">
 <node TEXT="definition" ID="ID_543513352" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="identify a simple way to realize relationship btw. entities" ID="ID_491475239" CREATED="1733824909984" MODIFIED="1733824936255"/>
 </node>
@@ -371,8 +407,7 @@
 </node>
 </node>
 </node>
-<node TEXT="behavioural pattern" POSITION="bottom_or_right" ID="ID_841039016" CREATED="1733824851846" MODIFIED="1733824864734">
-<edge COLOR="#0000ff"/>
+<node TEXT="behavioural pattern" FOLDED="true" ID="ID_841039016" CREATED="1733824851846" MODIFIED="1734253515242">
 <node TEXT="definition" ID="ID_27236049" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="identify common communication patterns btw. objects" ID="ID_1722166609" CREATED="1733824909984" MODIFIED="1733825001080"/>
 </node>
@@ -537,8 +572,7 @@
 </node>
 </node>
 </node>
-<node TEXT="creational pattern" POSITION="bottom_or_right" ID="ID_54792032" CREATED="1733824865446" MODIFIED="1733824874912">
-<edge COLOR="#00ff00"/>
+<node TEXT="creational pattern" ID="ID_54792032" CREATED="1733824865446" MODIFIED="1734253520199">
 <node TEXT="definition" ID="ID_704143590" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="deal with object creation mechanisms" ID="ID_1952688676" CREATED="1733824909984" MODIFIED="1733825026499"/>
 </node>
@@ -629,7 +663,6 @@
     一个 <code>unique_ptr</code>&#xa0;对象只能指向一个资源，且在任何时刻，这个资源只能由一个 <code>unique_ptr</code>&#xa0;来管理。
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -644,7 +677,6 @@
     多个 <code>shared_ptr</code>&#xa0;可以指向同一个资源。内部通过 <strong>引用计数</strong>&#xa0;记录资源被几个 <code>shared_ptr</code>&#xa0;&#xa0;管理。
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -666,28 +698,94 @@
     Prototype to manage cloning objects.
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="relation btw. objects" POSITION="top_or_left" ID="ID_950635706" CREATED="1733839519768" MODIFIED="1733839529984">
-<edge COLOR="#ff00ff"/>
-<node TEXT="aggregation" ID="ID_775257942" CREATED="1733839532210" MODIFIED="1733839537868">
-<node TEXT="example" FOLDED="true" ID="ID_223430628" CREATED="1733839551353" MODIFIED="1733839553748">
-<node TEXT="Engine 的生命周期独立于 Car。&#xa;Engine 可以被多个 Car 对象共享" ID="ID_137201845" CREATED="1733839566638" MODIFIED="1733839583114">
-<hook URI="SADES_files/png-241210-150605414-9946954488314077350.png" SIZE="0.4296636" NAME="ExternalObject"/>
+</node>
+<node TEXT="Pattern oriented software architecture" POSITION="bottom_or_right" ID="ID_1780096588" CREATED="1734253539783" MODIFIED="1734253571784">
+<edge COLOR="#7c0000"/>
+<node TEXT="Service Access &amp; Configuration" ID="ID_685531092" CREATED="1734253601049" MODIFIED="1734253602712">
+<node TEXT="Wrapper facade pattern" FOLDED="true" ID="ID_1877909809" CREATED="1734253994521" MODIFIED="1734254012412">
+<node TEXT="definition" FOLDED="true" ID="ID_1542212255" CREATED="1734254094431" MODIFIED="1734254097472">
+<node ID="ID_808093133" CREATED="1734254197572" MODIFIED="1734254197572"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    The Wrapper Facade design pattern encapsulates the functions and data provided by existing nonobject-oriented APIs within more concise, robust, portable, maintainable, and cohesive objectoriented class interfaces
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
-<node TEXT="在c++中，当A对B的调用是将B或B的子类的实例指针进行调用（即在private或protected中出现B的定义），即为aggregation" ID="ID_723355847" CREATED="1733842458075" MODIFIED="1733842693870"/>
+<node TEXT="example" ID="ID_9058657" CREATED="1733841429968" MODIFIED="1733841432858">
+<node TEXT="pictures" FOLDED="true" ID="ID_1494253415" CREATED="1734255529417" MODIFIED="1734255533178">
+<node TEXT="png-241215-103748350-15051343430699244042.png" ID="ID_1624832134" CREATED="1734255469431" MODIFIED="1734255469431">
+<hook URI="SADES_files/png-241215-103748350-15051343430699244042.png" SIZE="0.48324516" NAME="ExternalObject"/>
+<node TEXT="png-241215-103807486-7526742322037122776.png" ID="ID_803865402" CREATED="1734255488780" MODIFIED="1734255488780">
+<hook URI="SADES_files/png-241215-103807486-7526742322037122776.png" SIZE="0.49129644" NAME="ExternalObject"/>
+<node TEXT="png-241215-103829517-1386448427083262233.png" ID="ID_323356424" CREATED="1734255510725" MODIFIED="1734255510725">
+<hook URI="SADES_files/png-241215-103829517-1386448427083262233.png" SIZE="0.54587156" NAME="ExternalObject"/>
 </node>
-<node TEXT="composition" FOLDED="true" ID="ID_1780277191" CREATED="1733839538681" MODIFIED="1733839543858">
-<node TEXT="example" FOLDED="true" ID="ID_1214945367" CREATED="1733839597939" MODIFIED="1733839601299">
-<node TEXT="" ID="ID_1161538299" CREATED="1733839603856" MODIFIED="1733839736593">
-<hook URI="SADES_files/png-241210-150642295-1862562747722265956.png" SIZE="0.48414025" NAME="ExternalObject"/>
-<node ID="ID_125753214" CREATED="1733839738497" MODIFIED="1733839738497"><richcontent TYPE="NODE">
+</node>
+</node>
+</node>
+<node TEXT="some questions" FOLDED="true" ID="ID_986299245" CREATED="1734255569575" MODIFIED="1734255582937">
+<node TEXT="openFile()为甚么不带形参filename也可以运行成功" ID="ID_1533833390" CREATED="1734255591615" MODIFIED="1734255608373">
+<hook URI="SADES_files/png-241215-103950413-14655732395158136349.png" SIZE="0.61959" NAME="ExternalObject"/>
+</node>
+<node TEXT="如果底层api和封装函数用的不是一种编程语言的话我需要做格式转化吗？是的，编译器可以同时编译 C++ 和底层 C API，但需要遵循一些规则和技巧，因为 C 和 C++ 在语言特性和符号命名规则（Name Mangling）方面存在差异。" ID="ID_1388616591" CREATED="1734255668283" MODIFIED="1734255717194">
+<hook URI="SADES_files/png-241215-104107285-7301724328728006975.png" SIZE="0.7809358" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" ID="ID_1861846864" CREATED="1733842358922" MODIFIED="1733842363690">
+<node TEXT="png-241215-102050804-6026316422158507410.png" ID="ID_1255728258" CREATED="1734254452206" MODIFIED="1734254452206">
+<hook URI="SADES_files/png-241215-102050804-6026316422158507410.png" SIZE="0.31517228" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241215-102600133-10771845337595695235.png" ID="ID_1713491913" CREATED="1734254761233" MODIFIED="1734254761233">
+<hook URI="SADES_files/png-241215-102600133-10771845337595695235.png" SIZE="0.3210961" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_52479022" CREATED="1733842955531" MODIFIED="1733842961485">
+<node ID="ID_1431937396" CREATED="1734254084515" MODIFIED="1734254084515"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Apply the Wrapper Facade design pattern to avoid accessing low-level operating system APIs directly
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Event Handling" ID="ID_1498102496" CREATED="1734253612006" MODIFIED="1734253612968">
+<node TEXT="Reactor" FOLDED="true" ID="ID_1462603105" CREATED="1734253994521" MODIFIED="1734255858882">
+<node TEXT="definition" FOLDED="true" ID="ID_1908277240" CREATED="1734254094431" MODIFIED="1734254097472">
+<node TEXT="Consider an event-driven application that receives multiple service requests simultaneously, but processes them synchronously and serially" ID="ID_1162832539" CREATED="1734254197572" MODIFIED="1734256507745"/>
+</node>
+<node TEXT="example" ID="ID_721510143" CREATED="1733841429968" MODIFIED="1733841432858">
+<node TEXT="pictures" FOLDED="true" ID="ID_1230871110" CREATED="1734255529417" MODIFIED="1734255533178">
+<node TEXT="png-241215-111557389-11084364572214563381.png" ID="ID_1060705631" CREATED="1734257758482" MODIFIED="1734257758482">
+<hook URI="SADES_files/png-241215-111557389-11084364572214563381.png" SIZE="0.5080214" NAME="ExternalObject"/>
+<node TEXT="png-241215-111619167-1822475043489244924.png" ID="ID_622443234" CREATED="1734257780798" MODIFIED="1734257780798">
+<hook URI="SADES_files/png-241215-111619167-1822475043489244924.png" SIZE="0.45542696" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="some questions" ID="ID_1978628261" CREATED="1734255569575" MODIFIED="1734255582937">
+<node TEXT="clearer explanation about diff. parts" FOLDED="true" ID="ID_1534175399" CREATED="1734258799858" MODIFIED="1734258846436">
+<node TEXT="reactor" FOLDED="true" ID="ID_1218575476" CREATED="1734258879130" MODIFIED="1734258882057">
+<node FOLDED="true" ID="ID_1851930397" CREATED="1734258883060" MODIFIED="1734258883060"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -695,18 +793,686 @@
   </head>
   <body>
     <p>
-      Engine 的生命周期由 Car 管理
+      Reactor 是整个模式的<strong>核心调度器</strong>，负责：
     </p>
   </body>
 </html>
+
+</richcontent>
+<node ID="ID_578027740" CREATED="1734258883061" MODIFIED="1734258883061"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        监听多个事件源（文件描述符、套接字等）是否准备好处理（读/写/异常）。
+      </li>
+    </ul>
+  </body>
+</html>
+
 </richcontent>
 </node>
-<node TEXT="当 Car 销毁时，Engine 也随之销毁" ID="ID_1618927350" CREATED="1733839745649" MODIFIED="1733839764825"/>
-<node TEXT="Engine 不能被其他 Car 对象共享" ID="ID_352203823" CREATED="1733839738497" MODIFIED="1733839755860"/>
+<node ID="ID_1019588907" CREATED="1734258883061" MODIFIED="1734258883061"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        当事件发生时，通知相应的<strong>事件处理器</strong>进行处理。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
 </node>
 </node>
-<node TEXT="在c++中，当A对B的调用是将B或B的子类的实例进行调用（即在private或protected中出现B的指针定义），即为composition" ID="ID_1492316369" CREATED="1733842733003" MODIFIED="1733842757687"/>
+<node FOLDED="true" ID="ID_1170131780" CREATED="1734258927504" MODIFIED="1734258927504"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>
+          <strong>类成员变量：<code>std::vector&lt;EventHandler*&gt; handlers</code></strong>
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1935656239" CREATED="1734258927505" MODIFIED="1734258927505"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        存储所有注册的<strong>事件处理器</strong>。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
 </node>
+<node ID="ID_1180829645" CREATED="1734258927506" MODIFIED="1734258927506"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        每个 <code>EventHandler</code>&#xa0;表示一个要监听的事件源（例如文件描述符、套接字等）。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node FOLDED="true" ID="ID_1159353361" CREATED="1734258927506" MODIFIED="1734258927506"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>
+          <strong>方法：<code>void register_handler(EventHandler* handler)</code></strong>
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_681722839" CREATED="1734258927510" MODIFIED="1734258927510"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>功能</strong>：将事件处理器添加到 <code>handlers</code>&#xa0;列表中。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1806754091" CREATED="1734258927510" MODIFIED="1734258927510"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>意义</strong>：为 Reactor 注册新的事件处理器，Reactor 会监听这些处理器的句柄。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node FOLDED="true" ID="ID_1704725101" CREATED="1734258927510" MODIFIED="1734258927510"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <p>
+          <strong>方法：<code>void handle_events()</code></strong>
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_215620730" CREATED="1734258927514" MODIFIED="1734258927514"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        这是 Reactor 的主循环，<strong>持续监听事件</strong>。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1858883659" CREATED="1734258927514" MODIFIED="1734258927514"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        具体步骤：
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1354392461" CREATED="1734258927515" MODIFIED="1734258927515"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>初始化监听集合</strong>：<br/>使用 <code>fd_set</code>&#xa0;数据结构，调用 <code>FD_ZERO</code>&#xa0;清空监听集合。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_58408284" CREATED="1734258927516" MODIFIED="1734258927516"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>注册所有事件源</strong>：<br/>遍历 <code>handlers</code>，将每个处理器的句柄通过 <code>FD_SET</code>&#xa0;加入监听集合。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_38187106" CREATED="1734258927516" MODIFIED="1734258927516"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>计算最大文件描述符</strong>：<br/>需要在 <code>select()</code>&#xa0;调用时传递 <code>max_fd + 1</code>，确保监听的范围覆盖所有句柄。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1418874240" CREATED="1734258927517" MODIFIED="1734258927517"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>调用 <code>select()</code>&#xa0;等待事件发生</strong>：
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1424272467" CREATED="1734258927517" MODIFIED="1734258927517"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>select()</code>&#xa0;是同步 I/O 多路复用函数，它会阻塞直到有事件发生。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node FOLDED="true" ID="ID_1227745341" CREATED="1734258927518" MODIFIED="1734258927518"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        参数解释：
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_559779779" CREATED="1734258927518" MODIFIED="1734258927518"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>max_fd + 1</code>：需要监听的文件描述符的最大值加 1。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1115361122" CREATED="1734258927519" MODIFIED="1734258927519"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>&amp;read_fds</code>：传入的读事件监听集合。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_700352470" CREATED="1734258927519" MODIFIED="1734258927519"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>nullptr</code>：不监听写事件或异常事件。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node ID="ID_1532732438" CREATED="1734258927520" MODIFIED="1734258927520"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>事件分发</strong>：
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_224607382" CREATED="1734258927520" MODIFIED="1734258927520"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        遍历所有处理器，使用 <code>FD_ISSET</code>&#xa0;检查对应的句柄是否触发了事件。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1611597596" CREATED="1734258927520" MODIFIED="1734258927520"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        如果触发事件，调用处理器的 <code>handle_event()</code>&#xa0;方法，执行具体逻辑。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Handler" FOLDED="true" ID="ID_1181477387" CREATED="1734258974769" MODIFIED="1734259009723">
+<node ID="ID_1778051742" CREATED="1734259032703" MODIFIED="1734259032703"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong><code>StdinEventHandler</code></strong>&#xa0;返回的 <code>STDIN_FILENO</code>&#xa0;是一个固定值，表示标准输入。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1755515586" CREATED="1734259032703" MODIFIED="1734259032703"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong><code>TimerEventHandler</code></strong>&#xa0;返回的 <code>timer_fd</code>&#xa0;是通过 <code>pipe()</code>&#xa0;&#xa0;动态生成的文件描述符，用于监听定时事件。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node FOLDED="true" ID="ID_1305423512" CREATED="1734259032705" MODIFIED="1734259032705"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        两者的共同点是：
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1581736022" CREATED="1734259032709" MODIFIED="1734259032709"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        返回值都是 <strong>文件描述符</strong>（handle），是操作系统用于标识资源的唯一 ID。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_539911671" CREATED="1734259032710" MODIFIED="1734259032710"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        Reactor 依靠这些值来监听不同的事件源并分发事件。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="question" ID="ID_1804072867" CREATED="1734260122378" MODIFIED="1734260131381">
+<node TEXT="为甚么handle_events的while循环循环这个read_fds注册部分,注册一次不就够了吗" FOLDED="true" ID="ID_157840874" CREATED="1734260132523" MODIFIED="1734260200373">
+<node FOLDED="true" ID="ID_464476069" CREATED="1734260223842" MODIFIED="1734260233505"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h2>
+      <strong><code>select()</code>&#xa0;修改 <code>read_fds</code>&#xa0;了！</strong>
+    </h2>
+  </body>
+</html>
+
+</richcontent>
+<node FOLDED="true" ID="ID_762838348" CREATED="1734260223843" MODIFIED="1734260223843"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <code>select()</code>&#xa0;是一个 <strong>破坏性函数</strong>，它会修改传入的 <code>fd_set</code>&#xa0;集合：
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_32114293" CREATED="1734260223843" MODIFIED="1734260223843"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>传入 <code>read_fds</code></strong>：表示所有要监听的文件描述符集合。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_324597878" CREATED="1734260223844" MODIFIED="1734260223844"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>返回后 <code>read_fds</code></strong>：被修改，仅保留<strong>就绪状态</strong>的文件描述符，其他未就绪的文件描述符被清除。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node FOLDED="true" ID="ID_1318300327" CREATED="1734260223844" MODIFIED="1734260223844"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h3>
+      <strong>举例说明：</strong>
+    </h3>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_741091608" CREATED="1734260223844" MODIFIED="1734260296588"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      假设一开始 <code>read_fds</code>&#xa0;包含文件描述符：read_fds = { fd1, fd2 }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1362425308" CREATED="1734260223849" MODIFIED="1734260223849"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      当 <code>select()</code>&#xa0;返回时：
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node ID="ID_1229192232" CREATED="1734260223850" MODIFIED="1734260277372"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        如果 <code>fd1</code>&#xa0;就绪，<code>read_fds</code>&#xa0;会变为：read_fds = { fd1 }
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1609972972" CREATED="1734260223852" MODIFIED="1734260223852"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>fd2</code>&#xa0;会被移除，除非你重新设置 <code>FD_SET(fd2, &amp;read_fds)</code>。
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node ID="ID_18110954" CREATED="1734260223852" MODIFIED="1734260223852"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <strong>因此：</strong><br/>每次进入事件循环之前，你都需要重新将所有文件描述符通过 <code>FD_SET</code>&#xa0;加入 <code>read_fds</code>，否则 <code>select()</code>&#xa0;无法再监听这些事件。
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="according to UML" FOLDED="true" ID="ID_1352788828" CREATED="1734259159714" MODIFIED="1734259246872">
+<node TEXT="handle对于eventhandler的conposition部分，并与reactor链接" ID="ID_258665091" CREATED="1734259317971" MODIFIED="1734259367105">
+<hook URI="SADES_files/png-241215-114156861-4386410531485289344.png" SIZE="0.6261943" NAME="ExternalObject"/>
+</node>
+<node TEXT="select后dispatches部分" ID="ID_1346998287" CREATED="1734259646657" MODIFIED="1734259669300">
+<hook URI="SADES_files/png-241215-114725784-8655775072399371974.png" SIZE="0.70896554" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="UML" FOLDED="true" ID="ID_1624708003" CREATED="1733842358922" MODIFIED="1733842363690">
+<node TEXT="png-241215-104517336-8799238006861797591.png" ID="ID_822484783" CREATED="1734255918759" MODIFIED="1734255918759">
+<hook URI="SADES_files/png-241215-104517336-8799238006861797591.png" SIZE="0.32231957" NAME="ExternalObject"/>
+</node>
+<node TEXT="png-241215-104547179-17375428614102365520.png" ID="ID_1602262871" CREATED="1734255948142" MODIFIED="1734255948142">
+<hook URI="SADES_files/png-241215-104547179-17375428614102365520.png" SIZE="0.30112582" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="meaning" FOLDED="true" ID="ID_946615248" CREATED="1733842955531" MODIFIED="1733842961485">
+<node TEXT="allows event-driven applications to demultiplex &amp; dispatch service requests that are delivered to an application from one or more clients." ID="ID_1654870954" CREATED="1734254084515" MODIFIED="1734256536803"/>
+</node>
+</node>
+</node>
+<node TEXT="Concurrency" ID="ID_97030561" CREATED="1734253618694" MODIFIED="1734253620655"/>
+<node TEXT="Synchronization" ID="ID_256168791" CREATED="1734253628079" MODIFIED="1734253629573"/>
 </node>
 </node>
 </map>
