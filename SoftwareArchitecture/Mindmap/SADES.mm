@@ -1,9 +1,10 @@
-<map version="freeplane 1.11.5">
+<map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="SADES" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1733824803787" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" zoom="1.465">
+<hook NAME="MapStyle" zoom="1.7715613">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false"/>
+    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -110,7 +111,7 @@
 </node>
 <node TEXT="Design pattern" POSITION="bottom_or_right" ID="ID_1547840828" CREATED="1734253499232" MODIFIED="1734253507223">
 <edge COLOR="#00ffff"/>
-<node TEXT="structural pattern" FOLDED="true" ID="ID_1189739005" CREATED="1733824813053" MODIFIED="1734253511509">
+<node TEXT="structural pattern" ID="ID_1189739005" CREATED="1733824813053" MODIFIED="1734253511509">
 <node TEXT="definition" ID="ID_543513352" CREATED="1733824902293" MODIFIED="1733824907822">
 <node TEXT="identify a simple way to realize relationship btw. entities" ID="ID_491475239" CREATED="1733824909984" MODIFIED="1733824936255"/>
 </node>
@@ -437,7 +438,7 @@
 <node TEXT=" Observer lets you define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically." ID="ID_1840543780" CREATED="1733842962386" MODIFIED="1733914351146"/>
 </node>
 </node>
-<node TEXT="Memento" ID="ID_659566844" CREATED="1733840052313" MODIFIED="1733907526213">
+<node TEXT="Memento" FOLDED="true" ID="ID_659566844" CREATED="1733840052313" MODIFIED="1733907526213">
 <node TEXT="difinition" FOLDED="true" ID="ID_1321410723" CREATED="1733840949098" MODIFIED="1733840959115">
 <node TEXT="Without violating encapsulation, capture and externalize an object&apos;s internal state so that the object can be returned to this state later." ID="ID_567955097" CREATED="1733840237273" MODIFIED="1733907543021"/>
 </node>
@@ -458,7 +459,7 @@
 <hook URI="SADES_files/png-241211-133504983-16061969135833160637.png" SIZE="0.62058824" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="UML" FOLDED="true" POSITION="bottom_or_right" ID="ID_667528269" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="UML" POSITION="bottom_or_right" ID="ID_667528269" CREATED="1733831885539" MODIFIED="1733831888932">
 <node TEXT="picture" ID="ID_1349078835" CREATED="1733831891139" MODIFIED="1733831956140">
 <node TEXT="normal memento" ID="ID_1288362019" CREATED="1733907601075" MODIFIED="1733920367534">
 <hook URI="SADES_files/png-241211-095957286-7694484411920677102.png" SIZE="0.39660242" NAME="ExternalObject"/>
@@ -584,8 +585,8 @@
 <node TEXT="example" FOLDED="true" ID="ID_359687979" CREATED="1733829596224" MODIFIED="1733903196758">
 <node TEXT="我写了一个C语言版本的abstract factory，是factory method升级版，可进行参考，其中createproduct函数没有写成返回product形式，是以void形式写的，稍作改进即可" ID="ID_1320046145" CREATED="1733914305725" MODIFIED="1734208612246"/>
 </node>
-<node TEXT="UML" FOLDED="true" ID="ID_542583639" CREATED="1733831885539" MODIFIED="1733831888932">
-<node TEXT="picture" FOLDED="true" ID="ID_1619267653" CREATED="1733831891139" MODIFIED="1733831956140">
+<node TEXT="UML" ID="ID_542583639" CREATED="1733831885539" MODIFIED="1733831888932">
+<node TEXT="picture" ID="ID_1619267653" CREATED="1733831891139" MODIFIED="1733831956140">
 <node TEXT="png-241214-211926288-11196467274478111622.png" ID="ID_1143625309" CREATED="1734207567689" MODIFIED="1734207567689">
 <hook URI="SADES_files/png-241214-211926288-11196467274478111622.png" SIZE="0.32227767" NAME="ExternalObject"/>
 </node>
@@ -769,7 +770,7 @@
 </node>
 </node>
 <node TEXT="Event Handling" ID="ID_1498102496" CREATED="1734253612006" MODIFIED="1734253612968">
-<node TEXT="Reactor" FOLDED="true" ID="ID_1462603105" CREATED="1734253994521" MODIFIED="1734255858882">
+<node TEXT="Reactor" ID="ID_1462603105" CREATED="1734253994521" MODIFIED="1734255858882">
 <node TEXT="definition" FOLDED="true" ID="ID_1908277240" CREATED="1734254094431" MODIFIED="1734254097472">
 <node TEXT="Consider an event-driven application that receives multiple service requests simultaneously, but processes them synchronously and serially" ID="ID_1162832539" CREATED="1734254197572" MODIFIED="1734256507745"/>
 </node>
@@ -797,7 +798,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_578027740" CREATED="1734258883061" MODIFIED="1734258883061"><richcontent TYPE="NODE">
 
@@ -813,7 +813,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1019588907" CREATED="1734258883061" MODIFIED="1734258883061"><richcontent TYPE="NODE">
@@ -830,7 +829,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -850,7 +848,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_1935656239" CREATED="1734258927505" MODIFIED="1734258927505"><richcontent TYPE="NODE">
 
@@ -866,7 +863,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1180829645" CREATED="1734258927506" MODIFIED="1734258927506"><richcontent TYPE="NODE">
@@ -883,7 +879,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -903,7 +898,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_681722839" CREATED="1734258927510" MODIFIED="1734258927510"><richcontent TYPE="NODE">
 
@@ -919,7 +913,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1806754091" CREATED="1734258927510" MODIFIED="1734258927510"><richcontent TYPE="NODE">
@@ -936,7 +929,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -956,7 +948,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_215620730" CREATED="1734258927514" MODIFIED="1734258927514"><richcontent TYPE="NODE">
 
@@ -972,7 +963,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1858883659" CREATED="1734258927514" MODIFIED="1734258927514"><richcontent TYPE="NODE">
@@ -989,7 +979,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1354392461" CREATED="1734258927515" MODIFIED="1734258927515"><richcontent TYPE="NODE">
@@ -1006,7 +995,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_58408284" CREATED="1734258927516" MODIFIED="1734258927516"><richcontent TYPE="NODE">
@@ -1023,7 +1011,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_38187106" CREATED="1734258927516" MODIFIED="1734258927516"><richcontent TYPE="NODE">
@@ -1040,7 +1027,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1418874240" CREATED="1734258927517" MODIFIED="1734258927517"><richcontent TYPE="NODE">
@@ -1057,7 +1043,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_1424272467" CREATED="1734258927517" MODIFIED="1734258927517"><richcontent TYPE="NODE">
 
@@ -1073,7 +1058,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node FOLDED="true" ID="ID_1227745341" CREATED="1734258927518" MODIFIED="1734258927518"><richcontent TYPE="NODE">
@@ -1090,7 +1074,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_559779779" CREATED="1734258927518" MODIFIED="1734258927518"><richcontent TYPE="NODE">
 
@@ -1106,7 +1089,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1115361122" CREATED="1734258927519" MODIFIED="1734258927519"><richcontent TYPE="NODE">
@@ -1123,7 +1105,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_700352470" CREATED="1734258927519" MODIFIED="1734258927519"><richcontent TYPE="NODE">
@@ -1140,7 +1121,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1159,7 +1139,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_224607382" CREATED="1734258927520" MODIFIED="1734258927520"><richcontent TYPE="NODE">
 
@@ -1175,7 +1154,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1611597596" CREATED="1734258927520" MODIFIED="1734258927520"><richcontent TYPE="NODE">
@@ -1192,7 +1170,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1213,7 +1190,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1755515586" CREATED="1734259032703" MODIFIED="1734259032703"><richcontent TYPE="NODE">
@@ -1230,7 +1206,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node FOLDED="true" ID="ID_1305423512" CREATED="1734259032705" MODIFIED="1734259032705"><richcontent TYPE="NODE">
@@ -1247,7 +1222,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_1581736022" CREATED="1734259032709" MODIFIED="1734259032709"><richcontent TYPE="NODE">
 
@@ -1263,7 +1237,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_539911671" CREATED="1734259032710" MODIFIED="1734259032710"><richcontent TYPE="NODE">
@@ -1280,7 +1253,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1299,7 +1271,6 @@
     </h2>
   </body>
 </html>
-
 </richcontent>
 <node FOLDED="true" ID="ID_762838348" CREATED="1734260223843" MODIFIED="1734260223843"><richcontent TYPE="NODE">
 
@@ -1313,7 +1284,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_32114293" CREATED="1734260223843" MODIFIED="1734260223843"><richcontent TYPE="NODE">
 
@@ -1329,7 +1299,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_324597878" CREATED="1734260223844" MODIFIED="1734260223844"><richcontent TYPE="NODE">
@@ -1346,7 +1315,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1362,7 +1330,6 @@
     </h3>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_741091608" CREATED="1734260223844" MODIFIED="1734260296588"><richcontent TYPE="NODE">
 
@@ -1376,7 +1343,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1362425308" CREATED="1734260223849" MODIFIED="1734260223849"><richcontent TYPE="NODE">
@@ -1391,7 +1357,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node ID="ID_1229192232" CREATED="1734260223850" MODIFIED="1734260277372"><richcontent TYPE="NODE">
 
@@ -1407,7 +1372,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1609972972" CREATED="1734260223852" MODIFIED="1734260223852"><richcontent TYPE="NODE">
@@ -1424,7 +1388,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1440,7 +1403,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
